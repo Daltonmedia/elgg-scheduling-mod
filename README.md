@@ -8,4 +8,5 @@ WORK IN PROGRESS
 
 TODO
 =====
-
+1. Make sure only invited members can view the poll
+2. remove the public 'all' page where all the polls are
