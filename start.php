@@ -7,8 +7,8 @@ elgg_register_event_handler('init', 'system', 'scheduling_mod_init');
 
 function scheduling_mod_init() {
        
-    elgg_extend_view('forms/scheduling/save', 'forms/scheduling/invite',1);
-    elgg_register_plugin_hook_handler('action','scheduling/save', 'add_scheduler_invites');
+    elgg_extend_view('forms/scheduling/days', 'forms/scheduling/invite',1);
+    elgg_register_plugin_hook_handler('action','scheduling/days', 'add_scheduler_invites');
     elgg_unregister_menu_item('owner_block', 'scheduling');
     elgg_register_page_handler('schedule', 'scheduling_mod_page_handler');
     
